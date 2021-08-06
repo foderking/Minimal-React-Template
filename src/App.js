@@ -1,11 +1,12 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 
 const App = () =>
 {
   return (
     <div className='container'>
       <h1>Hello World!</h1>
-      <p>heo</p>
+      <Button onClick={() => toggleShow(true)}>Show Toast</Button>
     </div>
   )
 }
