@@ -1,17 +1,13 @@
+import React from 'react'
 
-import React from "react";
-
-class App extends React.Component {
-  render() {
-    const { name } = this.props;
-    return (
-      <>
-        <h1>
-          Hello {name}
-        </h1>
-      </>
-    );
-  }
+const App = () =>
+{
+  return (
+    <div className='container'>
+      <h1>Hello World!</h1>
+      <p>heo</p>
+    </div>
+  )
 }
 
-export default App;
+export default App
