@@ -51,7 +51,7 @@ const App = () =>
 }
 ....
 ```
-<small>renders block of text with 3 paragraphs</small>
+<sub>renders block of text with 3 paragraphs</sub>
 
 Using DummySentence in src/App.js:
 
@@ -72,7 +72,7 @@ const App = () =>
 }
 ....
 ```
-<small>renders sentence with 3 words</small>
+<sub>renders sentence with 3 words</sub>
 
 ## Running
 
