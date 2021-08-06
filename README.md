@@ -27,6 +27,52 @@ To run tests:
 ```sh
 npm run test
 ```
+## Using filler text
+
+The filler component provides two modules - DummyParagraph and DummySentence.
+They accept the "length" variable as props.
+
+Using DummyParagraph in src/App.js:
+
+```js
+....
+import DummyParagraph from './Filler/DummyParagraph'
+
+const App = () =>
+{
+  return (
+    <div className='container'>
+      <h1>Hello World!</h1>
+      <div className='paragraph'>
+        <DummyParagraph length={3} />
+      </div>
+    </div>
+  )
+}
+....
+```
+renders block of text with 3 paragraphs
+
+Using DummySentence in src/App.js:
+
+```js
+....
+import DummySentence from './Filler/DummySentence'
+
+const App = () =>
+{
+  return (
+    <div className='container'>
+      <h1>Hello World!</h1>
+      <div className='sentence'>
+        <DummySentence length={3} />
+      </div>
+    </div>
+  )
+}
+....
+```
+renders sentence with 3 words
 
 ## Running
 
