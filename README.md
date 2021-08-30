@@ -31,6 +31,13 @@ Things you'll to install this project..
 
 + An Operating System with a working shell ( Bash, Powershell, zsh etc.)
 + The latest version of Git
++ npm
+
+To install Yarn
+```sh
+npm install --global yarn
+```
+
 
 ### Installing
 
