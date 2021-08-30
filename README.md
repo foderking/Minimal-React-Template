@@ -19,6 +19,7 @@
 ## About <a name = "about"></a>
 
 A minimal template for building front-end web applications.
+http://deminifyjs.netlify.app/
 
 ## Getting Started <a name = "getting_started"></a>
 
