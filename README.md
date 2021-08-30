@@ -18,7 +18,8 @@
 
 ## About <a name = "about"></a>
 
-A minimal template for building front-end web applications. Comes with parcel, react-bootstrap, and a custom component for adding filler text.
+A minimal template for building front-end web applications.
+Uses parcel to build, yarn for managing packages, and react-bootstrap as a ui framework. also contains some custom ui components
 
 ## Getting Started <a name = "getting_started"></a>
 
