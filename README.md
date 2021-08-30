@@ -24,7 +24,7 @@ A minimal template for building front-end web applications.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Features
+### Features
 
 + Parcel for bundling the application
 + Yarn for managing packages
@@ -138,3 +138,5 @@ const App = () =>
 ## Credits
 
 [createapp.dev](https://createapp.dev/)
+[yarn](https://classic.yarnpkg.com/en/)
+[parcel](https://parceljs.org/)
