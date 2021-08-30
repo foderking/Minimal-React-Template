@@ -19,11 +19,17 @@
 ## About <a name = "about"></a>
 
 A minimal template for building front-end web applications.
-Uses parcel to build, yarn for managing packages, and react-bootstrap as a ui framework. also contains some custom ui components
 
 ## Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+## Features
+
++ Parcel for bundling the application
++ Yarn for managing packages
++ React-bootstrap as a ui framework
++ Other custom components
 
 ### Prerequisites
 
