@@ -1,6 +1,6 @@
 import React from 'react'
 import { generateRandomParagraph } from './dummy'
-import RandomNumGen from '../functionality/random'
+import { RandomNumGen } from './dummy'
 
 
 const DummyParagraph = (props) =>

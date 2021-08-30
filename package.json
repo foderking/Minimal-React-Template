@@ -1,5 +1,5 @@
 {
-  "name": "empty-project",
+  "name": "minimal_react_template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,5 +25,8 @@
     "@babel/preset-react": "^7.14.5",
     "jest": "^27.0.6",
     "parcel-bundler": "^1.12.5"
-  }
+  },
+  "browserslist": [
+    "since 2017-06"
+  ]
 }

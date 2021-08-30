@@ -21,28 +21,25 @@ Eget sit amet tellus cras adipiscing. Morbi tristique senectus et netus et. Risu
 At erat pellentesque adipiscing commodo elit at imperdiet. Est ullamcorper eget nulla facilisi etiam dignissim diam. Integer enim neque volutpat ac tincidunt vitae semper. Varius duis at consectetur lorem donec massa. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Duis ultricies lacus sed turpis. Tristique senectus et netus et malesuada fames. Id aliquet risus feugiat in ante metus dictum. Mattis vulputate enim nulla aliquet porttitor lacus luctus. Aliquet nec ullamcorper sit amet risus nullam.
 acus viverra vitae congue eu consequat ac felis donec. Neque aliquam vestibulum morbi blandit. Malesuada fames ac turpis egestas sed tempus urna. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Risus in hendrerit gravida rutrum quisque non tellus orci. Velit ut tortor pretium viverra suspendisse potenti nullam. Sollicitudin tempor id eu nisl. Volutpat ac tincidunt vitae semper quis lectus nulla. Est ante in nibh mauris. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Nisl tincidunt eget nullam non nisi est. Purus viverra accumsan in nisl nisi scelerisque eu. Lacus laoreet non curabitur gravida arcu ac tortor. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Netus et malesuada fames ac. Elementum facilisis leo vel fringilla est ullamcorper eget.`
 
+import { generateRandomString } from '../lib'
 
 
 
 function paragraphSplit( str ) 
 {
 	const ans = str.split('\n')
-
 	if (ans.length === 1 && !ans[0]) {
 		return []
 	}
-
 	return ans 
 }
 
 function sentenceSplit(str)
 {
 	const ans = str.split(' ')
-
 	if (ans.length === 1 && !ans[0]) {
 		return []
 	}
-
 	return ans
 }
 
@@ -52,16 +49,13 @@ function getMaxParagraphNo()
 {
 	const no = paragraphSplit(text).length
 	console.log(`Max no. of paragraphs is: ${no}`)
-
 	return no
 }
 
 function getMinSentenceNo(DEBUG = false)
 {
 	const no = sentenceSplit(getSmallestStr(DEBUG)).length
-
 	if (DEBUG) console.log(`Min no. of words is: ${no}`)
-
 	return no
 }
 
@@ -69,7 +63,6 @@ function getMaxSentenceNo(show = false)
 {
 	const no = sentenceSplit(getBiggestStr(show)).length
 	console.log(`Max no. of words is: ${no}`)
-
 	return no
 }
 
@@ -80,7 +73,19 @@ function Random(max)
 	return Math.floor(Math.random() * max)
 }
 
-
+function RandomNumGen()
+{
+	const N = 20
+	let usedID =  []
+	let id = generateRandomString(N)
+	if (usedID.includes(id)){
+		return RandomNumGen()
+	}
+	else {
+		usedID.push(id)
+		return id
+	}
+}
 
 
 
@@ -187,5 +192,6 @@ module.exports = {
 	getMinSentenceNo,
 	generateRandomLine,
 	generateRandomWord,
-	generateRandomParagraph
+	generateRandomParagraph,
+	RandomNumGen
 }
