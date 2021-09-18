@@ -19,7 +19,10 @@
 ## About <a name = "about"></a>
 
 A minimal template for building front-end web applications.
-http://deminifyjs.netlify.app/
+Modern templates are often bloated, for example - Create React App. They usually come with a lot of unnecessary things that I don't use, and never will.
+Plus, they also use 'npm' package manager, which in space and data inefficient.
+My template uses yarn for package management - Faster, Lighter, and Better than npm. Parcel for bundling - faster and requires less configuration than 'Webpack',
+And a cherry on top with 'React Bootstrap' - A fast UI framework optimized for React.
 
 ## Getting Started <a name = "getting_started"></a>
 
